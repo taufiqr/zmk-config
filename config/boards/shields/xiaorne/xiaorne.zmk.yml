@@ -1,0 +1,11 @@
+file_format: "1"
+id: xiaorne
+name: XIAORNE
+type: shield
+url: https://github.com/taufiqr
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - xiaorne_left
+  - xiaorne_right
