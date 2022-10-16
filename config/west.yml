@@ -1,5 +1,7 @@
 manifest:
   remotes:
+    - name: taufiqr
+      url-base: https://github.com/taufiqr
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
