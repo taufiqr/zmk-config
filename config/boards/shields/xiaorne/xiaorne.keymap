@@ -32,10 +32,10 @@
 // | SHFT | PGDN | END  |     |     |  [  |   |  ]  |     |     |     |  \  |  `   |
 //                    | GUI |     | SPC |   | DEL |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1     &kp N2    &kp N3    &kp N4   &kp N5        &kp N6     &kp N7  &kp N8    &kp N9    &kp N0    &kp BSPC
-   &kp LCTRL  &kp PG_UP  &kp HOME  &trans    &trans   &kp MINUS     &kp EQUAL  &trans  &trans    &trans    &trans    &trans
-   &kp LSHFT  &kp PG_DN  &kp DOWN  &trans    &trans   &kp LBKT      &kp RBKT   &trans  &trans    &trans    &kp BSLH  &kp GRAVE
-                    	           &kp LALT  &trans   &kp SPACE     &kp DEL    &trans  &kp RGUI
+   &kp TAB    &kp N1     &kp N2    &kp N3    &kp N4   &kp N5        &kp N6     &kp N7    &kp N8    &kp N9  &kp N0    &kp BSPC
+   &kp LCTRL  &kp PG_UP  &kp HOME  &trans    &trans   &kp MINUS     &kp EQUAL  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &trans
+   &kp LSHFT  &kp PG_DN  &kp DOWN  &trans    &trans   &kp LBKT      &kp RBKT   &trans    &trans    &trans  &kp BSLH  &kp GRAVE
+                    	           &kp LALT  &trans   &kp SPACE     &kp DEL    &trans    &kp RGUI
                         >;
                 };
 
@@ -46,9 +46,9 @@
 // | SHFT |     |     |     |     | CAPS |   |PSCRN| LFT | DWN | RGT |     |      |
 //                    | ALT |     |  SPC |   | ENT |     | GUI |
                         bindings = <
-   &kp TAB    &kp F1   &kp F2  &kp F3   &kp F4   &kp F5         &kp F6     &kp F7    &kp F8    &kp F9     &kp F10  &kp BSPC
-   &kp LCTRL  &trans   &trans  &trans   &trans   &kp F11        &kp F12    &trans    &kp UP    &trans     &trans   &trans
-   &kp LSHFT  &trans   &trans  &trans   &trans   &kp CAPS       &kp PSCRN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &bt BT_CLR
+   &kp TAB    &kp F1   &kp F2  &kp F3   &kp F4   &kp F5         &kp F6     &kp F7    &kp F8    &kp F9   &kp F10  &kp BSPC
+   &kp LCTRL  &trans   &trans  &trans   &trans   &kp F11        &kp F12    &trans    &trans    &trans   &trans   &trans
+   &kp LSHFT  &trans   &trans  &trans   &trans   &kp CAPS       &kp PSCRN  &trans    &trans    &trans   &trans   &bt BT_CLR
                                &kp LALT &trans   &kp SPACE      &kp RET    &trans    &kp RGUI
                         >;
                 };
