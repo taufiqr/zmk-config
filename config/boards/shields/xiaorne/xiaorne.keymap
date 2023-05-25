@@ -71,7 +71,7 @@
 //                    | ALT |     |  SPC |   | ENT |     | GUI |
                         bindings = <
    &trans  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC    &trans   &trans  &trans  &trans  &trans  &trans    
-   &trans  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &trans   &trans  &trans  &trans  &trans  &trans    
+   &trans  &kp DQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &trans   &trans  &trans  &trans  &trans  &trans    
    &trans  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE    &trans   &trans  &trans  &trans  &trans  &trans    
                                 &kp LPAR   &kp RPAR   &kp UNDER   &trans   &trans  &trans
                         >;
