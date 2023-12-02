@@ -1,0 +1,11 @@
+file_format: "1"
+id: cygnus
+name: Cygnus
+type: shield
+url: https://github.com/taufiqr
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - cygnus_left
+  - cygnus_right

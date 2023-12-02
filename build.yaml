@@ -14,6 +14,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: xiaorne_left
+    shield: cygnus_left
   - board: seeeduino_xiao_ble
-    shield: xiaorne_right
+    shield: cygnus_right
