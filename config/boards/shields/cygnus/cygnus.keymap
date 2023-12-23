@@ -64,7 +64,7 @@
         //│          │  ]       │  }       │  )       │    '     │   │    \     │  _       │  +       │  │       │   ?      │
             &trans     &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                   &lt 3     &trans     &trans         &trans     &trans     &lt 3
+                                   &mo 3     &trans     &trans         &trans     &trans     &mo 3
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -80,7 +80,7 @@
         //│          │          │          │          │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
             &trans    &trans     &trans     &trans      &trans          &trans    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                   &lt 3     &trans     &trans         &trans     &trans     &lt 3
+                                   &mo 3     &trans     &trans         &trans     &trans     &mo 3
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
