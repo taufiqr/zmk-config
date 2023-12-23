@@ -46,10 +46,10 @@
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //                    | ALT | LWR | SPC |   | ENT | RSE  | GUI |
                         bindings = <
-        &kp Q  &kp W      &kp E        &kp R        &kp T               &kp Y         &kp U        &kp I        &kp O         &kp P   
-        &kp A  &hm LALT S &hm LCTRL D  &hm LGUI F   &kp G               &kp H         &hm RGUI J   &hm RCTRL K  &hm RALT L    &kp SEMI
-        &kp Z  &kp X      &kp C        &kp V        &kp B               &kp N         &kp M        &kp COMMA    &kp DOT       &kp FSLH
-                          &kp ESC      &lt 2 TAB  &hm LSHFT SPACE       &kp RET       &lt 1 BSPC   &lt 3 DEL
+        &kp Q  &kp W  &kp E          &kp R      &kp T               &kp Y         &kp U       &kp I         &kp O    &kp P   
+        &kp A  &kp S  &kp D          &kp F      &kp G               &kp H         &kp J       &kp K         &kp L    &kp SEMI
+        &kp Z  &kp X  &kp C          &kp V      &kp B               &kp N         &kp M       &kp COMMA     &kp DOT  &kp FSLH
+                      &hm LCTRL ESC  &lt 2 TAB  &hm LSHFT SPACE     &hm LGUI RET  &lt 1 BSPC  &hm LALT DEL  
                         >;
                 };
                 sym_layer {
@@ -58,13 +58,13 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  "       │  [       │  {       │  (       │          │   │   /      │  -       │  =       │     :    │  ;       │
-            &kp DQT     &kp LBKT   &kp LBRC   &kp LPAR   &trans        &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+        //│          │  [       │  {       │  (       │    "     │   │   /      │  -       │  =       │     :    │  ;       │
+            &trans     &kp LBKT   &kp LBRC   &kp LPAR   &kp DQT        &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤ 
-        //│  '       │  ]       │  }       │  )       │          │   │    \     │  _       │  +       │  │       │   ?      │
-            &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
+        //│          │  ]       │  }       │  )       │    '     │   │    \     │  _       │  +       │  │       │   ?      │
+            &trans     &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                   &trans     &trans     &trans         &trans     &trans     &trans
+                                   &lt 3     &trans     &trans         &trans     &trans     &lt 3
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -80,7 +80,7 @@
         //│          │          │          │          │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
             &trans    &trans     &trans     &trans      &trans          &trans    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                   &trans     &trans     &trans         &trans     &trans     &trans
+                                   &lt 3     &trans     &trans         &trans     &trans     &lt 3
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -96,7 +96,7 @@
         //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │          |  VOL DOWN │ PREVSONG │
             &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans   &kp C_VOL_DN &kp C_PREV
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┴───────────┴──────────╯
-                                 &bootloader   &trans    &sys_reset       &sys_reset   &trans       &bootloader 
+                                 &sys_reset   &trans    &bootloader       &bootloader   &trans     &sys_reset 
         //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────┴──────────╯
 
                         >;
