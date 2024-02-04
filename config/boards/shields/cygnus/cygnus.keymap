@@ -42,14 +42,14 @@
                 default_layer {
 // ----------////------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
+// |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  |
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //                    | ALT | LWR | SPC |   | ENT | RSE  | GUI |
                         bindings = <
-        &kp Q  &kp W  &kp E          &kp R      &kp T               &kp Y         &kp U       &kp I         &kp O    &kp P   
-        &kp A  &kp S  &kp D          &kp F      &kp G               &kp H         &kp J       &kp K         &kp L    &kp SEMI
-        &kp Z  &kp X  &kp C          &kp V      &kp B               &kp N         &kp M       &kp COMMA     &kp DOT  &kp FSLH
-                      &hm LCTRL ESC  &lt 2 TAB  &hm LSHFT SPACE     &hm LGUI RET  &lt 1 BSPC  &hm LALT DEL  
+        &kp Q  &kp W      &kp E          &kp R       &kp T               &kp Y          &kp U        &kp I        &kp O       &kp P   
+        &kp A  &hm LALT S &hm LCTRL D    &hm LGUI F  &kp G               &kp H          &hm RGUI J   &hm RCTRL K  &hm RALT L  &kp SQT
+        &kp Z  &kp X      &kp C          &kp V       &kp B               &kp N          &kp M        &kp COMMA    &kp DOT     &kp FSLH
+                          &kp ESC        &lt 2 TAB   &hm LSHFT SPACE     &hm RSHFT RET  &lt 1 BSPC   &kp DEL  
                         >;
                 };
                 sym_layer {
@@ -58,11 +58,11 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  [       │  {       │  (       │    "     │   │   /      │  -       │  =       │     :    │  ;       │
-            &trans     &kp LBKT   &kp LBRC   &kp LPAR   &kp DQT        &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+        //│    ;     │  [       │  {       │  (       │  -       │   │  =       │  \       │          │          │          │
+            &kp SEMI   &kp LBKT   &kp LBRC   &kp LPAR   &kp MINUS      &kp EQUAL  &kp BSLH   &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤ 
-        //│          │  ]       │  }       │  )       │    '     │   │    \     │  _       │  +       │  │       │   ?      │
-            &trans     &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
+        //│    :     │  ]       │  }       │  )       │  _       │   │  +       │  |       │          │          │          │
+            &kp COLON  &kp RBKT   &kp RBRC   &kp RPAR   &kp UNDER      &kp PLUS   &kp PIPE   &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                    &mo 3     &trans     &trans         &trans     &trans     &mo 3
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -74,11 +74,11 @@
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │ CapsLock │ PrintSc  │  INSERT  │          |   |          │ LEFT     │ DOWN     │ UP       │ RIGHT    │
-            &kp DEL   &kp CAPS   &kp PSCRN  &kp INS     &trans          &trans    &kp LARW   &kp DARW   &kp UARW   &kp RARW 
+        //│ REDO     │ CapsLock │ PrintSc  │  INSERT  │          |   | PAGE UP  │          │ UP       │          │  HOME    │
+           &kp K_REDO  &kp CAPS  &kp PSCRN   &kp INS     &trans        &kp PG_UP   &trans    &kp UARW   &trans      &kp HOME 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
-            &trans    &trans     &trans     &trans      &trans          &trans    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END 
+        //│ UNDO     │   CUT    │   COPY   │  PASTE   |          │   │ PAGE DOWN│ LEFT     │ DOWN     │ RIGHT    │ END      │
+           &kp K_UNDO &kp K_CUT  &kp K_COPY &kp K_PASTE &trans         &kp PG_DN  &kp LARW   &kp DARW   &kp RARW   &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                    &mo 3     &trans     &trans         &trans     &trans     &mo 3
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
