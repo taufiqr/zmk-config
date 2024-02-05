@@ -74,11 +74,11 @@
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ REDO     │ CapsLock │ PrintSc  │  INSERT  │          |   | PAGE UP  │          │ UP       │          │  HOME    │
-           &kp K_REDO  &kp CAPS  &kp PSCRN   &kp INS     &trans        &kp PG_UP   &trans    &kp UARW   &trans      &kp HOME 
+        //│ REDO     │          │          │          │          |   | PAGE UP  │          │ UP       │          │  HOME    │
+           &kp K_REDO  &kp LALT   &kp LCTRL  &kp LGUI  &kp PSCRN      &kp PG_UP   &trans    &kp UARW   &trans     &kp HOME 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ UNDO     │   CUT    │   COPY   │  PASTE   |          │   │ PAGE DOWN│ LEFT     │ DOWN     │ RIGHT    │ END      │
-           &kp K_UNDO &kp K_CUT  &kp K_COPY &kp K_PASTE &trans         &kp PG_DN  &kp LARW   &kp DARW   &kp RARW   &kp END 
+           &kp K_UNDO &kp K_CUT  &kp K_COPY &kp K_PASTE &kp CAPS         &kp PG_DN  &kp LARW   &kp DARW   &kp RARW   &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                    &mo 3     &trans     &trans         &trans     &trans     &mo 3
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -99,7 +99,7 @@
                                  &sys_reset   &trans    &bootloader       &bootloader   &trans     &sys_reset 
         //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────┴──────────╯
 
-                        >;
+                        >;     
                 };
         };
 };
