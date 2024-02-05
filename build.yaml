@@ -20,6 +20,6 @@ include:
   - board: seeeduino_xiao_ble
     shield: settings_reset
   - board: seeeduino_xiao_ble
-    shield: xiaorni_left
+    shield: xiaorne_left
   - board: seeeduino_xiao_ble
-    shield: xiaorni_right
+    shield: xiaorne_right
