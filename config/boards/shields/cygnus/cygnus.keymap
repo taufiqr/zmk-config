@@ -46,10 +46,18 @@
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //                    | ALT | LWR | SPC |   | ENT | RSE  | GUI |
                         bindings = <
-        &kp Q  &kp W      &kp E          &kp R       &kp T               &kp Y          &kp U        &kp I        &kp O       &kp P   
-        &kp A  &hm LALT S &hm LCTRL D    &hm LGUI F  &kp G               &kp H          &hm RGUI J   &hm RCTRL K  &hm RALT L  &kp SQT
-        &kp Z  &kp X      &kp C          &kp V       &kp B               &kp N          &kp M        &kp COMMA    &kp DOT     &kp FSLH
-                          &kp ESC        &lt 2 TAB   &hm LSHFT SPACE     &hm RSHFT RET  &lt 1 BSPC   &kp DEL  
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
+            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│    ;     │  [       │  {       │  (       │  -       │   │  =       │  \       │          │          │          │  
+            &kp A     &hm LALT S &hm LCTRL D &hm LGUI F  &kp G         &kp H    &hm RGUI J &hm RCTRL K &hm RALT L  &kp SQT
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│    ;     │  [       │  {       │  (       │  -       │   │  =       │  \       │          │          │          │
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                               &kp ESC   &lt 2 TAB   &hm LSHFT SPACE &hm RSHFT RET  &lt 1 BSPC   &kp DEL  
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
                 sym_layer {
@@ -96,7 +104,7 @@
         //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │          |  VOL DOWN │ PREVSONG │
             &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans   &kp C_VOL_DN &kp C_PREV
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┴───────────┴──────────╯
-                                 &sys_reset   &trans    &bootloader       &bootloader   &trans     &sys_reset 
+                                  &trans    &trans       &bootloader      &bootloader   &trans      &trans 
         //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────┴──────────╯
 
                         >;     
