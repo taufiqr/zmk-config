@@ -17,9 +17,3 @@ include:
     shield: cygnus_left
   - board: seeeduino_xiao_ble
     shield: cygnus_right
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
-  - board: seeeduino_xiao_ble
-    shield: xiaorne_left
-  - board: seeeduino_xiao_ble
-    shield: xiaorne_right
