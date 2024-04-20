@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 /* definitions for mouse layer */
-#include "mouse.dtsi"
+// #include "mouse.dtsi"
 
 #define ___ &trans
 
