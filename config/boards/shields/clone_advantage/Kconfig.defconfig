@@ -1,17 +1,17 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_clone_advantage_LEFT
+if SHIELD_ClONE_ADVANTAGE_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "clone_advantage"
+	default "clone advantage"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_clone_advantage_LEFT || SHIELD_clone_advantage_RIGHT
+if SHIELD_ClONE_ADVANTAGE_LEFT || SHIELD_ClONE_ADVANTAGE_RIGHT
 
 config ZMK_SPLIT
 	default y
