@@ -1,8 +1,8 @@
 # Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-config SHIELD_clone_advantage_LEFT
+config SHIELD_ClONE_ADVANTAGE_LEFT
 	def_bool $(shields_list_contains,clone_advantage_left)
 
-config SHIELD_clone_advantage_RIGHT
+config SHIELD_ClONE_ADVANTAGE_RIGHT
 	def_bool $(shields_list_contains,clone_advantage_right)
