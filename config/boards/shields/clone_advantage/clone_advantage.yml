@@ -1,0 +1,11 @@
+file_format: "1"
+id: clone_advantage
+name: clone_advantage
+type: shield
+url: https://github.com/taufiqr
+requires: [nice_nano_v2]
+features:
+  - keys
+siblings:
+  - clone_advantage_left
+  - clone_advantage_right

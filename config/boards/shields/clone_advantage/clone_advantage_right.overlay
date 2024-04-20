@@ -1,0 +1,20 @@
+// xiaorne_right.overlay
+
+#include "clone_advantage.dtsi" // Notice that the main dtsi files are included in the overlay.
+
+&default_transform {
+	col-offset = <8>;
+};
+
+
+&kscan0 {
+    col-gpios
+        = <&xiao_d 2 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 3 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 4 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 5 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 6 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+        ;
+};
