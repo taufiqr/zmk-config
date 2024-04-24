@@ -17,7 +17,25 @@
 #define MOD 4
 #define MS 5
 
+&lt {
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <0>;
+        flavor = "tap-preferred";
+};
+
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -28,7 +46,7 @@
                 &kp   ESC   &kp A     &kp S     &kp D     &kp F     &kp G     &none                                &none     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
                 &kp   LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B     &kp LCTRL  &kp LALT        &kp LGUI  &kp RCTRL &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
                 &none &kp GRAVE &kp CAPS  &kp LEFT  &kp RIGHT                            &kp HOME        &kp PG_UP                      &kp UP    &kp DOWN  &kp LBKT  &kp RBKT  &none
-                                                                    &kp BSPC  &kp DEL    &kp END         &kp PG_DN &kp ENTER &kp SPACE
+                                                                    &kp TAB   &kp SPACE  &kp END         &kp PG_DN &kp ENTER &kp BSPC
                                                                                    
             >;
         };
