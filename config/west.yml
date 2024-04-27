@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: petejohanson
-      revision: feat/pointers-move-scroll
+      remote: cosmicbuffalo
+      revision: adv360-led
       import: app/west.yml
   self:
     path: config
