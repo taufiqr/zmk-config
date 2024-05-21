@@ -12,14 +12,14 @@
 #     shield: reviung41
 #
 ---
-include:
-  - board: nice_nano_v2
-    shield: clone_advantage_left
-  - board: nice_nano_v2
-    shield: clone_advantage_right
-
 # include:
-#   - board: seeeduino_xiao_ble
-#     shield: xiaorne_left
-#   - board: seeeduino_xiao_ble
-#     shield: xiaorne_right
+#   - board: nice_nano_v2
+#     shield: clone_advantage_left
+#   - board: nice_nano_v2
+#     shield: clone_advantage_right
+
+include:
+  - board: seeeduino_xiao_ble
+    shield: xiaorne_left
+  - board: seeeduino_xiao_ble
+    shield: xiaorne_right
