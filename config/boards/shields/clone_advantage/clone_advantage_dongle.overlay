@@ -1,1 +1,16 @@
-// clone_advantage_left.overlay
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    chosen {
+        zmk,kscan = &dongle;
+    };
+
+    default_transform: dongle {
+        compatible = "zmk,kscan-mock";
+        columns = <1>;
+        rows = <0>;
+
+        events = <>;
+    };
+
+};
