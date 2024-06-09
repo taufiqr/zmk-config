@@ -2,7 +2,8 @@
 
 / {
     chosen {
-        zmk,kscan = default_transform;
+        zmk,kscan = &kscan0;
+		zmk,matrix_transform = &default_transform;
     };
 
     default_transform: dongle {
@@ -11,6 +12,11 @@
         rows = <0>;
 
         events = <>;
-    };
+    }
+
+    kscan0: kscan {
+		compatible = "zmk,kscan-mock";
+		label = "KSCAN";
+    }
 
 };
