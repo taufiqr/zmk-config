@@ -19,6 +19,8 @@ include:
     shield: clone_advantage_right
   - board: nice_nano_v2
     shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: clone_advantage_dongle
 
 # include:
 #   - board: seeeduino_xiao_ble
