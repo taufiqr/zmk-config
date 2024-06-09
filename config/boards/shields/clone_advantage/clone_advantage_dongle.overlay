@@ -2,7 +2,7 @@
 
 / {
     chosen {
-        zmk,kscan = dongle_kscan;
+        zmk,kscan = &dongle_kscan;
     };
 
     dongle_kscan: dongle_kscan {
