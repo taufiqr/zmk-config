@@ -2,7 +2,7 @@
 
 / {
     chosen {
-        zmk,kscan = &dongle;
+        zmk,kscan = default_transform;
     };
 
     default_transform: dongle {
