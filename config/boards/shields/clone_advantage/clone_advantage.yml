@@ -5,10 +5,8 @@ type: shield
 url: https://github.com/taufiqr
 requires: 
   - nice_nano_v2
-  - seeeduino_xiao_ble
 features:
   - keys
 siblings:
   - clone_advantage_left
   - clone_advantage_right
-  - clone_advantage_dongle
