@@ -2,21 +2,14 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
+        zmk,kscan = dongle_kscan;
     };
 
-    default_transform: dongle {
+    dongle_kscan: dongle_kscan {
         compatible = "zmk,kscan-mock";
         columns = <1>;
         rows = <0>;
 
         events = <>;
-    }
-
-    kscan0: kscan {
-		compatible = "zmk,kscan-mock";
-		label = "KSCAN";
-    }
-
+    };
 };
