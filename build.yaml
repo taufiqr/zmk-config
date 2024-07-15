@@ -26,6 +26,6 @@
 
 include:
   - board: seeeduino_xiao_ble
-    shield: cygnus_left
+    shield: totem_left
   - board: seeeduino_xiao_ble
-    shield: cygnus_right
+    shield: totem_right
