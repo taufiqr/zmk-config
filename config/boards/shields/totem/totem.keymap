@@ -65,7 +65,7 @@
                       &kp SEMI   &kp LBKT   &kp LBRC   &kp LPAR   &kp MINUS                &kp EQUAL  &kp BSLH   &trans     &trans     &trans
         //╭─────────├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────╮ 
         //          │    :     │  ]       │  }       │  )       │  _       │             │  +       │  |       │          │          │          │
-            &kp ESC              &kp RBKT   &kp RBRC   &kp RPAR   &kp UNDER                &kp PLUS   &kp PIPE   &trans     &trans                &kp trans
+            &kp ESC              &kp RBKT   &kp RBRC   &kp RPAR   &kp UNDER                &kp PLUS   &kp PIPE   &trans     &trans                &trans
         //╰─────────┴──────────┴──────────┴──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┴──────────┴──────────╯──────────╯
                       &kp COLON             &kp TAB    &mo 2      &hm LSHFT SPACE          &hm RSHFT RET  &mo 1  &kp BSPC               &kp FSLH
         //          ╰──────────╯          ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯          ╰──────────╯
@@ -81,7 +81,7 @@
                      &kp K_REDO  &kp LALT   &kp LCTRL  &kp LGUI  &kp PSCRN                &kp PG_UP   &trans    &kp UARW   &trans     &kp HOME 
         //╭─────────├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤╰──────────╯
         //          │ UNDO     │   CUT    │   COPY   │  PASTE   |          │             │ PAGE DOWN│ LEFT     │ DOWN     │ RIGHT    │ END      │
-             &kp ESC             &kp K_CUT  &kp K_COPY &kp K_PASTE &kp CAPS                &kp PG_DN  &kp LARW   &kp DARW   &kp RARW               &kp trans 
+             &kp ESC             &kp K_CUT  &kp K_COPY &kp K_PASTE &kp CAPS                &kp PG_DN  &kp LARW   &kp DARW   &kp RARW               &trans 
         //╰─────────╰──────────┴──────────┴──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┴──────────┴──────────╯╰──────────╯
                       &kp K_UNDO            &trans      &mo 3     &trans                   &trans      &mo 3      &trans              &kp END
         //          ╰──────────╯          ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯          ╰──────────╯
