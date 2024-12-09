@@ -7,6 +7,7 @@ requires:
   - nice_nano_v2
 features:
   - keys
+  - studio 
 siblings:
   - clone_advantage_left
   - clone_advantage_right
