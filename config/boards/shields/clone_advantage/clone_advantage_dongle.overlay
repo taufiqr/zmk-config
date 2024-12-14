@@ -1,9 +1,10 @@
 
-#include "clone_advantage-layouts.dtsi"
+#include "clone_advantage.dtsi"
 
 / {
 	chosen {
 		zmk,kscan = &mock_kscan;
+		zmk,physical-layout = &physical_layout0;
 	};
 
 	mock_kscan: kscan {
