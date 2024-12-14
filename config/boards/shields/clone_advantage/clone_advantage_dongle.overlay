@@ -1,6 +1,6 @@
 #include "clone_advantage.dtsi"
 
-&kscan_0 {
+&kscan0 {
 	compatible = "zmk,kscan-mock";
 	columns =  <0>;
 	rows =  <0>;
