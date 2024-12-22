@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.keymap": "cpp",
+    "*.dtsi": "cpp"
+  }
+}
