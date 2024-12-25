@@ -1,12 +1,11 @@
 file_format: "1"
 id: totem
-name: Cygnus
+name: Totem
 type: shield
 url: https://github.com/taufiqr
 requires: [seeeduino_xiao_ble]
 features:
   - keys
-  - studio 
 siblings:
   - totem_left
   - totem_right
