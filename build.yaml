@@ -26,9 +26,9 @@
 #     shield: settings_reset
 include:
   - board: seeeduino_xiao_ble
-    shield: totem_left
+    shield: cygnus_left
     # snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
-    shield: totem_right
+    shield: cygnus_right
 #   - board: seeeduino_xiao_ble
 #     shield: settings_reset
