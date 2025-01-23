@@ -1,0 +1,13 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_MOV
+
+config ZMK_KEYBOARD_NAME
+	default "mov"
+
+config SPI
+	default y
+
+config ZMK_POINTING
+	default y
