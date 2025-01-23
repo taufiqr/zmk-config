@@ -9,7 +9,7 @@ manifest:
     - name: badjeff
       url-base: https://github.com/badjeff
   projects:
-     - name: zmk
+    - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
