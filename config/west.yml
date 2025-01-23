@@ -6,19 +6,15 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: petejohanson
       url-base: https://github.com/petejohanson
-    - name: inorichi
-      url-base: https://github.com/inorichi
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
-    - name: zmk
-      remote: petejohanson
-      revision: feat/pointers-with-input-processors
-      import: app/west.yml
-    - name: zmk
+     - name: zmk
       remote: zmkfirmware
-      revision: feat/pointers-move-scroll
+      revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: inorichi
+      remote: badjeff
       revision: main
   self:
     path: config
