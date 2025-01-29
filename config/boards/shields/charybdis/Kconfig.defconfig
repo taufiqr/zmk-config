@@ -12,13 +12,20 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config SPI
     default y
 
-config ZMK_POINTING
-    default y
 endif
 
 if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
 config ZMK_SPLIT
 	default y
+
+config ZMK_POINTING
+    default y
+
+config ZMK_POINTING_SMOOTH_SCROLLING
+    default y
+
+config PMW3610
+    default y
 
 endif
