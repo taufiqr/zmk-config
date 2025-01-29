@@ -1,6 +1,7 @@
 // xiaorne_right.overlay
 
 #include "charybdis.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include "pmw3610.dtsi"
 
 &default_transform {
 	col-offset = <5>;
