@@ -20,6 +20,15 @@
     status = "okay";
 };
 
+
+&trackball {
+    status = "okay";
+};
+
+&trackball_split {
+	device = <&trackball>;
+};
+
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
