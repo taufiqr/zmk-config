@@ -13,12 +13,12 @@
 #
 # ---
 include:
+  # - board: nice_nano_v2
+  #   shield: mov
   - board: nice_nano_v2
-    shield: mov
-  # - board: nice_nano_v2
-  #   shield: clone_advantage_left
-  # - board: nice_nano_v2
-  #   shield: clone_advantage_right
+    shield: charybdis_left
+  - board: nice_nano_v2
+    shield: charybdis_right
   # - board: seeeduino_xiao_ble
   #   shield: clone_advantage_dongle
   #   snippet: studio-rpc-usb-uart
