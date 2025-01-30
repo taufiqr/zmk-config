@@ -63,7 +63,7 @@
         //│    ;     │  [       │  {       │  (       │  -       │   │  =       │  \       │          │          │          │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &kp ESC   &lt 2 TAB   &hm LSHFT SPACE &hm RSHFT RET  &lt 1 BSPC   &kp DEL  
+                               &kp ESC  &hm LSHFT SPACE &lt 2 TAB     &lt 1 BSPC &hm RSHFT RET &kp DEL  
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
@@ -79,7 +79,7 @@
         //│    :     │  ]       │  }       │  )       │  _       │   │  +       │  |       │          │          │          │
             &kp COLON  &kp RBKT   &kp RBRC   &kp RPAR   &kp UNDER      &kp PLUS   &kp PIPE   &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                   &mo 3     &trans     &trans         &trans     &trans     &mo 3
+                                 &trans     &trans     &mo 3           &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                     >;
                 };
@@ -95,7 +95,7 @@
         //│ UNDO     │   CUT    │   COPY   │  PASTE   |          │   │ PAGE DOWN│ LEFT     │ DOWN     │ RIGHT    │ END      │
            &kp K_UNDO &kp K_CUT  &kp K_COPY &kp K_PASTE &kp CAPS         &kp PG_DN  &kp LARW   &kp DARW   &kp RARW   &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                   &mo 3     &trans     &trans         &trans     &trans     &mo 3
+                                   &trans    &trans     &trans        &mo 3      &trans     &trans 
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                     >;
                 };
@@ -111,7 +111,7 @@
         //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │          |  VOL DOWN │ PREVSONG │
             &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans   &kp C_VOL_DN &kp C_PREV
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┴───────────┴──────────╯
-                                  &trans    &trans       &bootloader      &bootloader   &trans      &trans 
+                                  &trans    &trans       &trans           &trans   &trans      &trans 
         //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────┴──────────╯
 
                         >;     
@@ -128,7 +128,7 @@
         //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │          |  VOL DOWN │ PREVSONG │
             &trans     &trans     &trans     &trans      &trans           &trans       &trans       &trans     &trans      &trans
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┴───────────┴──────────╯
-                                  &mkp LCLK  &mkp MCLK  &mkp RCLK           &trans   &trans      &trans 
+                                  &mkp RCLK  &mkp LCLK  &mo 2           &trans   &trans      &trans 
         //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────┴──────────╯
 
                         >;     
