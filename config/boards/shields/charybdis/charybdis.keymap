@@ -17,7 +17,18 @@
         flavor = "tap-preferred";
 };
 
-/ {
+/ { 
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        scroller {
+            layers = <2>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
+        device = <&trackball>;
+        input-processors =
+            <&zip_temp_layer 4 500>;//activate layer 3 within 500ms of the trackball moving
+    };
+
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
