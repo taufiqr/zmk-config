@@ -40,14 +40,6 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        lf_rst_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
-
     keymap {
                 compatible = "zmk,keymap";
 
@@ -63,7 +55,7 @@
         //│    ;     │  [       │  {       │  (       │  -       │   │  =       │  \       │          │          │          │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &kp ESC  &hm LSHFT SPACE &lt 2 TAB     &lt 1 BSPC &hm RSHFT RET &kp DEL  
+                               &kp ESC  &hm LSHFT SPACE &lt 2 TAB     &lt 1 BSPC &hm RSHFT RET &kp DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
@@ -111,7 +103,7 @@
         //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │          |  VOL DOWN │ PREVSONG │
             &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans   &kp C_VOL_DN &kp C_PREV
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┴───────────┴──────────╯
-                                  &trans    &trans       &trans           &trans   &trans      &trans 
+                                  &studio_unlock    &trans       &trans           &trans   &trans      &trans 
         //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────┴──────────╯
 
                         >;     

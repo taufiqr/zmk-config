@@ -6,6 +6,7 @@ url: https://github.com/taufiqr
 requires: [nice_nano_v2]
 features:
   - keys
+  - studio
 siblings:
   - charybdis_left
   - charybdis_right
