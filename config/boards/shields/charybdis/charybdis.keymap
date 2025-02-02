@@ -21,10 +21,10 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-        input-processors = <&zip_temp_layer 4 500>;//activate layer 3 within 500ms of the trackball moving
+        // input-processors = <&zip_temp_layer 4 500>;//activate layer 3 within 500ms of the trackball moving
         scroll {
-            layers = <2>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
+            layers = <3>;
+            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_xy_scaler 1 10>;
         };
     };
 
@@ -53,10 +53,23 @@
             &kp A     &hm LALT S &hm LCTRL D &hm LGUI F  &kp G         &kp H    &hm RGUI J &hm RCTRL K &hm RALT L  &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│    ;     │  [       │  {       │  (       │  -       │   │  =       │  \       │          │          │          │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &lt 5 FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &kp ESC  &hm LSHFT SPACE &lt 2 TAB     &lt 1 BSPC &hm RSHFT RET &kp DEL
-        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+                               &kp ESC  &lt 3 TAB &hm LSHFT SPACE     &hm RSHFT RET &lt 2 BSPC  
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────╯
+                        >;
+                };
+                colemakdh_layer {
+                        bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+             &kp Q     &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SQT 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+             &kp A     &hm LALT R &hm LCTRL S &hm LGUI T  &kp G        &kp M     &hm RGUI N  &hm RCTRL E &hm RALT I  &kp O
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+              &kp Z    &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &lt 5 FSLH
+        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                  ___        ___        ___            ___          ___         ___                
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯          
                         >;
                 };
                 sym_layer {
@@ -71,8 +84,8 @@
         //│    :     │  ]       │  }       │  )       │  _       │   │  +       │  |       │          │          │          │
             &kp COLON  &kp RBKT   &kp RBRC   &kp RPAR   &kp UNDER      &kp PLUS   &kp PIPE   &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &trans     &trans     &mo 3           &trans     &trans     &trans
-        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+                                  &trans    &mo 4       &trans         &trans     &trans     
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────╯
                     >;
                 };
                 num_layer  {
@@ -85,10 +98,10 @@
            &kp K_REDO  &kp LALT   &kp LCTRL  &kp LGUI  &kp PSCRN      &kp PG_UP   &trans    &kp UARW   &trans     &kp HOME 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ UNDO     │   CUT    │   COPY   │  PASTE   |          │   │ PAGE DOWN│ LEFT     │ DOWN     │ RIGHT    │ END      │
-           &kp K_UNDO &kp K_CUT  &kp K_COPY &kp K_PASTE &kp CAPS         &kp PG_DN  &kp LARW   &kp DARW   &kp RARW   &kp END 
+           &kp K_UNDO &kp K_CUT  &kp K_COPY &kp K_PASTE &kp CAPS      &kp PG_DN  &kp LARW   &kp DARW   &kp RARW   &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                   &trans    &trans     &trans        &mo 3      &trans     &trans 
-        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+                                   &trans    &trans     &trans        &kp DEL      &mo 3
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────╯
                     >;
                 };
                 tri_layer {
@@ -103,25 +116,22 @@
         //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │          |  VOL DOWN │ PREVSONG │
             &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans   &kp C_VOL_DN &kp C_PREV
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┴───────────┴──────────╯
-                                  &studio_unlock    &trans       &trans           &trans   &trans      &trans 
-        //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────┴──────────╯
+                                  &studio_unlock &trans  &trans           &trans      &trans
+        //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────╯
 
                         >;     
                 };
                 mouse_layer {
                         bindings = <     
         //╭──────────┬──────────┬──────────┬───────────┬────────────╮   ╭────────────┬────────────┬──────────┬───────────┬──────────╮
-        //│  F1      │  F2      │  F3      │  F4       │ PROFILE 0  │   │ PROFILE 2  │ TOGGLEOUT  │ WINDOWS  │ VOL MUTE  │ NEXTSONG │
             &trans     &trans     &trans     &trans      &trans           &trans       &trans       &trans     &trans      &trans
         //├──────────┼──────────┼──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┼───────────┼──────────┤
-        //│  F5      │  F6      │  F7      │  F8       │ PROFILE 1  │   │ PROFILE 3  │ INC BRIGHT │          │  VOL UP   │PAUSEMUSIC│
             &trans     &trans     &trans     &trans      &trans           &trans       &trans       &trans     &trans      &trans
         //├──────────┼──────────┼──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┼───────────┼──────────┤
-        //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │          |  VOL DOWN │ PREVSONG │
             &trans     &trans     &trans     &trans      &trans           &trans       &trans       &trans     &trans      &trans
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┴───────────┴──────────╯
-                                  &mkp RCLK  &mkp LCLK  &mo 2           &trans   &trans      &trans 
-        //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────┴──────────╯
+                                  &mkp LCLK  &mo 3       &mkp RCLK        &trans      &trans
+        //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────╯
 
                         >;     
                 };
