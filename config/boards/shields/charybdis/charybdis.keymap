@@ -21,10 +21,10 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-        // input-processors = <&zip_temp_layer 4 500>;//activate layer 3 within 500ms of the trackball moving
+        input-processors = <&zip_xy_scaler 1 5>;//activate layer 3 within 500ms of the trackball moving
         scroll {
             layers = <3>;
-            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_xy_scaler 1 10>;
+            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_xy_scaler 1 100>;
         };
     };
 
@@ -100,7 +100,7 @@
         //│ UNDO     │   CUT    │   COPY   │  PASTE   |          │   │ PAGE DOWN│ LEFT     │ DOWN     │ RIGHT    │ END      │
            &kp K_UNDO &kp K_CUT  &kp K_COPY &kp K_PASTE &kp CAPS      &kp PG_DN  &kp LARW   &kp DARW   &kp RARW   &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                   &trans    &trans     &trans        &kp DEL      &mo 3
+                                   &trans    &trans     &trans        &kp DEL      &mo 4
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────╯
                     >;
                 };
