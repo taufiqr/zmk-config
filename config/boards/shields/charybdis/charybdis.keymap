@@ -21,10 +21,10 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-        input-processors = <&zip_xy_scaler 1 3>;//activate layer 3 within 500ms of the trackball moving
+        input-processors = <&zip_xy_scaler 1 2>;//activate layer 3 within 500ms of the trackball moving
         scroll {
             layers = <3>;
-            input-processors = <&zip_xy_scaler 1 25>, <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_scaler 1 10>, <&zip_xy_to_scroll_mapper>;
         };
     };
 
