@@ -1,10 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-// #include "charybdis-layouts.dtsi"
+#include "charybdis-layouts.dtsi"
 
 / {
 	chosen {
 		zmk,kscan = &kscan0;
-		zmk,physical-layout = &default_transform;
+		zmk,physical-layout = &physical_layout0;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -49,6 +49,6 @@
     };
 };
 
-// &physical_layout0 {
-//     transform = <&default_transform>;
-// };
+&physical_layout0 {
+    transform = <&default_transform>;
+};
