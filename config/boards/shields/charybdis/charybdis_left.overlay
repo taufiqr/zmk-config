@@ -14,5 +14,5 @@
 };
 
 &trackball_split {
-	status = "okay";
+	status = "disabled";
 };
