@@ -3,8 +3,7 @@ id: clone_advantage
 name: clone_advantage
 type: shield
 url: https://github.com/taufiqr
-requires: 
-  - nice_nano_v2
+requires: [pro_micro]
 features:
   - keys
   - studio 

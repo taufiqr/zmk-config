@@ -3,7 +3,7 @@ id: totem
 name: Totem
 type: shield
 url: https://github.com/taufiqr
-requires: [seeeduino_xiao_ble]
+requires: [seeed_xiao]
 features:
   - keys
   - studio 
