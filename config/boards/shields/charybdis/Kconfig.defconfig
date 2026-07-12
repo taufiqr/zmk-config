@@ -22,9 +22,6 @@ if SHIELD_CHARYBDIS_RIGHT
 config SPI
 	default y
 
-config PMW3610
-	default y
-
 config ZMK_POINTING
 	default y
 
