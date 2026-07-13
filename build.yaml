@@ -20,8 +20,10 @@ include:
     snippet: studio-rpc-usb-uart
   - board: nice_nano//zmk
     shield: charybdis_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano//zmk
     shield: charybdis_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   # - board: xiao_ble//zmk
   #   shield: clone_advantage_dongle
   #   snippet: studio-rpc-usb-uart
