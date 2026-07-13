@@ -24,7 +24,7 @@
         input-processors = <&zip_xy_scaler 1 2>;//activate layer 3 within 500ms of the trackball moving
         scroll {
             layers = <3>;
-            input-processors = <&zip_xy_scaler 1 20>, <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_scaler 1 50>, <&zip_xy_to_scroll_mapper>;
         };
     };
 
@@ -53,7 +53,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &lt 5 FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &kp ESC  &lt 3 TAB &hm LSHFT SPACE     &kp RET &lt 2 BSPC
+                               &kp ESC  &lt 3 TAB &hm LSHFT SPACE     &kp RETURN &lt 2 BSPC
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────╯
                         >;
                 };
